@@ -1,0 +1,16 @@
+import { IAddress } from "./address.interface"
+import { IStatus } from "./status.interface"
+
+export interface IUser {
+    name: string
+    email: string
+    password: string
+    age: number
+    address: IAddress
+    phone: number
+    active: boolean
+    role: string
+    signupDate: string
+    status: IStatus
+
+}
