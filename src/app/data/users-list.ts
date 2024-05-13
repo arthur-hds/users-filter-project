@@ -13,7 +13,7 @@ export const UserList: IUser[] = [
             "state": "São Paulo",
             "country": "Brazil"
         },
-        "phone": 4799991234,
+        "phone": "4799991234",
         "active": true,
         "role": "Developer",
         "signupDate": "2023-08-01T09:00:00.000Z",
@@ -37,7 +37,7 @@ export const UserList: IUser[] = [
             "state": "São Paulo",
             "country": "Brazil"
         },
-        "phone": 4792991234,
+        "phone": "47999991234",
         "active": true,
         "role": "Junior Developer",
         "signupDate": "2023-08-01T09:00:00.000Z",

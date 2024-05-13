@@ -7,7 +7,7 @@ export interface IUser {
     password: string
     age: number
     address: IAddress
-    phone: number
+    phone: string
     active: boolean
     role: string
     signupDate: string
