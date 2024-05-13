@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IUser } from './interfaces/user/user.interface';
+import { UserList } from './data/users-list';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'users-filter-project';
+
+  UserSelected : IUser = UserList[1]
+
+
 }
