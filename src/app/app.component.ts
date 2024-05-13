@@ -10,7 +10,7 @@ import { UserList } from './data/users-list';
 export class AppComponent {
   title = 'users-filter-project';
 
-  UserSelected : IUser = UserList[1]
+  UserSelected : IUser = UserList[0]
 
 
 }

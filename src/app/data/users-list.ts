@@ -9,7 +9,7 @@ export const UserList: IUser[] = [
         "age" : 38,
         "address": {
             "street": "don carlos",
-            "houseNumber": 42,
+            "houseNumber": 24,
             "state": "São Paulo",
             "country": "Brazil"
         },
