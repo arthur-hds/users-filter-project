@@ -11,4 +11,6 @@ export class UserDetailsComponent {
   @Input({required: true, alias: "User"})
   user: IUser = {} as IUser  //It declares the empty object
 
+  
+
 }
