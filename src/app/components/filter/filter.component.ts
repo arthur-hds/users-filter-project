@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { IFilterOptions } from '../../interfaces/filter-options.interface';
 
 @Component({
@@ -33,13 +33,10 @@ export class FilterComponent {
 
 ]
 
-
-  changeTest(value: string){
-    console.log(value)
-  }
+  @Output("onFilter") onFilterEmitt = new EventEmitter<IFilterOptions>;
 
   showUser(){
-    console.log(this.userFiltered)
+    this.onFilterEmitt.emit(this.userFiltered);
   }
 
 
