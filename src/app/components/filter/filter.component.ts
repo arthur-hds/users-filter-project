@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IFilterOptions } from '../../interfaces/filter-options.interface';
 
 @Component({
   selector: 'app-filter',
@@ -7,12 +8,39 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
 
+  userFiltered: IFilterOptions = {
 
-  foods = [{
+    name: undefined,
+    startDate: undefined,
+    endDate: undefined,
+    status: true
 
-    value: "Test1",
-    viewValue: "Testtt"
+  }
 
-  }]
+  status = [
+  {
+
+    description: "Active",
+    value: true
+
+  },
+  {
+
+    description: "Inactive",
+    value: false
+
+  }
+
+]
+
+
+  changeTest(value: string){
+    console.log(value)
+  }
+
+  showUser(){
+    console.log(this.userFiltered)
+  }
+
 
 }

@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.usersList = UserList;
-    }, 3000)    // It simulates a HTTP Request via Database
+    }, 1)    // It simulates a HTTP Request via Database
   }
 
 
