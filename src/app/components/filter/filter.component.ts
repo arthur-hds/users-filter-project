@@ -33,7 +33,7 @@ export class FilterComponent {
 
 ]
 
-  @Output("onFilter") onFilterEmitt = new EventEmitter<IFilterOptions>;
+  @Output("onFilter") onFilterEmitt = new EventEmitter<IFilterOptions>();
 
   showUser(){
     this.onFilterEmitt.emit(this.userFiltered);

@@ -3,13 +3,13 @@
   <div class="left-container">
     <div class="top-div">
       
-      <app-filter (userFiltered) = "onFilter($event)"></app-filter>
+      <app-filter (onFilter) = "onFilter($event)"></app-filter>
 
     </div>
 
     <div class="main-left-div">
 
-      <app-users-list [usersList]="usersList" (userSelected) = "showUser($event)"></app-users-list>
+      <app-users-list [usersList]="usersListFiltered" (userSelected) = "showUser($event)"></app-users-list>
       
     </div>
   </div>
