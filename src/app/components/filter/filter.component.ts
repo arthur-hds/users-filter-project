@@ -13,7 +13,7 @@ export class FilterComponent {
     name: undefined,
     startDate: undefined,
     endDate: undefined,
-    status: true
+    status: undefined
 
   }
 

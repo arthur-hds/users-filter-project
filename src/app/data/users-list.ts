@@ -38,9 +38,9 @@ export const UserList: IUser[] = [
             "country": "Brazil"
         },
         "phone": "47999991234",
-        "active": true,
+        "active": false,
         "role": "Junior Developer",
-        "signupDate": "2023-08-01T09:00:00.000Z",
+        "signupDate": "2024-04-01T09:00:00.000Z",
         "status": {
             "online": true,
             "verified": true,
