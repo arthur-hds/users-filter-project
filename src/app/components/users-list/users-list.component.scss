@@ -1,9 +1,19 @@
 .users-list{
     width: 100%;
+    
     height: 100%;
     padding: 20px;
-
+    
     &__item{
         cursor: pointer;
+        
+        
+        
     }
+}
+
+.tittle-list{
+    border: 24px 0 0 0 solid;
+    border-color: #87a8a9;
+
 }

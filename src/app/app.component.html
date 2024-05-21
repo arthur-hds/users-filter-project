@@ -15,7 +15,7 @@
   </div>
 
   
-  <div class="right-div">
+  <div class="right-div" *ngIf = "IS_STARTED">
 
     <app-user-details [User]="UserSelected" *ngIf = "IS_STARTED"></app-user-details>
 
