@@ -17,7 +17,7 @@
   
   <div class="right-div" *ngIf = "IS_STARTED">
 
-    <app-user-details [User]="UserSelected" *ngIf = "IS_STARTED"></app-user-details>
+    <app-user-details (onCloseClick) = "CloseModal($event)" [User]="UserSelected" *ngIf = "IS_STARTED"></app-user-details>
 
   </div>
 

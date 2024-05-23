@@ -7,7 +7,7 @@
         <div class="form__name">
 
             <mat-form-field class="example-full-width">
-                <mat-label>Favorite food</mat-label>
+                <mat-label>Set Name</mat-label>
                 <input matInput placeholder="Ex. Fulano da Silva" [(ngModel)] = "userFiltered.name">
             </mat-form-field>
 
@@ -31,7 +31,7 @@
 
         <div class="form__status">
             <mat-form-field>
-                <mat-label>Favorite food</mat-label>
+                <mat-label>Select Status</mat-label>
                 <mat-select [(ngModel)] = "userFiltered.status">
 
                     <mat-option *ngFor="let values of status" [value]="values.value">

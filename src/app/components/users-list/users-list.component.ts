@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChildren } from '@angular/core';
 import { IUser } from '../../interfaces/user/user.interface';
 import { UserList } from '../../data/users-list';
 
@@ -10,13 +10,26 @@ import { UserList } from '../../data/users-list';
 export class UsersListComponent {
 
   
-  @Input('usersList') usersList: IUser[] = [];
-  displayedColumns: string[] = ["name", "date", "status"]
+  @Input('usersList') 
+  usersList: IUser[] = [];
 
-  @Output('userSelected') userSelectedEmitt = new EventEmitter<IUser>;
+  @ViewChildren("UserRow")
+  UserRowEl!: ElementRef<HTMLTableCellElement>
+
+ 
+
+
+
+  displayedColumns: string[] = ["name", "date", "status"];
+
+  @Output('userSelected') 
+  userSelectedEmitt = new EventEmitter<IUser>;
+
+
 
   onUserSelected(user: IUser){
     console.log("User: ", user)
+    
     this.userSelectedEmitt.emit(user);
 
   }

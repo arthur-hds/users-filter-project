@@ -29,7 +29,13 @@ export class FilterComponent {
     description: "Inactive",
     value: false
 
+  },
+  {
+    description: "Any",
+    value: undefined
+
   }
+
 
 ]
 

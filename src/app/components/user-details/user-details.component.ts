@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IUser } from '../../interfaces/user/user.interface';
 
 @Component({
@@ -11,6 +11,12 @@ export class UserDetailsComponent {
   @Input({required: true, alias: "User"})
   user: IUser = {} as IUser  //It declares the empty object
 
-  
+  @Output("onCloseClick")
+  CloseClicked = new EventEmitter<boolean>
+
+  CloseModal(){
+    this.CloseClicked.emit(false)
+
+  }
 
 }

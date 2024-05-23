@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
 
   IS_STARTED: boolean = false;
 
+  
   ngOnInit() {
     setTimeout(() => {
       this.usersList = UserList;
@@ -42,6 +43,13 @@ export class AppComponent implements OnInit {
     this.usersListFiltered = filterList(user, this.usersList);
 
   }
+
+
+  CloseModal(value: boolean){
+    this.IS_STARTED = false
+  }
+
+
 
 
   
