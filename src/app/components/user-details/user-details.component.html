@@ -1,96 +1,96 @@
 <div class="user-details">
 
     <mat-list role="list">
+
+        <!-- Tittle Header - User and close button -->
         <div class="tittle-header">
-            
-                <span class="mat-h2 u-text-aling-center">User details</span>
-               
-            
-                <span (click) = "CloseModal()" class="mat-h2 btn-close">X</span>
-   
+
+            <span class="mat-h2 u-text-aling-center">User details</span>
+
+
+            <span (click)="CloseModal()" class="mat-h2 btn-close">X</span>
+
 
         </div>
+
+
+
         
-
-
-
         <mat-divider></mat-divider>
-
+        <!-- Respective items -->
         <mat-list-item>
-        
+
             <span class="mat-h2">Name: </span>
             <span class="mat-h3">{{ user.name | dashIfEmpty}}</span>
-        
+
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
-        
+
             <span class="mat-h2">Email: </span>
             <span class="mat-h3">{{ user.email | dashIfEmpty}}</span>
-        
+
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
-        
+
             <span class="mat-h2">Phone: </span>
             <span class="mat-h3">{{ user.phone | phone | dashIfEmpty}}</span>
-        
+
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
-        
+
             <span class="mat-h2">Address: </span>
             <span class="mat-h3"> {{ user.address | address | dashIfEmpty}} </span>
-        
+
         </mat-list-item>
         <mat-divider></mat-divider>
 
 
 
         <mat-list-item>
-        
+
             <span class="mat-h2">Status: </span>
             <span class="mat-h3">{{ user.active | status | dashIfEmpty}}</span>
-        
-        </mat-list-item>
-        
-        <mat-divider></mat-divider>
-            
 
-        
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+
+
+
         <mat-list-item>
-        
+
             <span class="mat-h2">Role: </span>
             <span class="mat-h3">{{ user.role | dashIfEmpty}}</span>
-        
+
         </mat-list-item>
-        
+
         <mat-divider></mat-divider>
 
 
 
         <mat-list-item>
-        
+
             <span class="mat-h2">Signup Date: </span>
             <span class="mat-h3">{{ user.signupDate | date : "dd/MM/yyyy" | dashIfEmpty }}</span>
-        
+
         </mat-list-item>
-        
+
         <mat-divider></mat-divider>
 
 
 
 
 
-        </mat-list>
+    </mat-list>
 
-       
+
 
 
 
 </div>
-
-
