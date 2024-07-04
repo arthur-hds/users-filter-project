@@ -1,11 +1,17 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { IFilterOptions } from '../../interfaces/filter-options.interface';
+import { getStatusValue, status } from '../../utils/status-list';
+
 
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.scss'
 })
+
+
+
+
 export class FilterComponent {
 
   userFiltered: IFilterOptions = {
@@ -17,22 +23,26 @@ export class FilterComponent {
 
   }
 
+ 
+
+
   status = [
   {
 
-    description: "Active",
-    value: true
+    description: status.Active,
+    value: getStatusValue(status.Active)
 
   },
   {
 
-    description: "Inactive",
-    value: false
+    description: status.Inactive,
+    value: getStatusValue(status.Inactive)
 
   },
   {
-    description: "Any",
-    value: undefined
+    description: status.Any,
+    value: getStatusValue(status.Any)
+
 
   }
 
